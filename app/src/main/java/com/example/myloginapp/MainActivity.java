@@ -21,6 +21,7 @@ import com.google.android.material.button.MaterialButton;
 
 public class MainActivity extends AppCompatActivity {
     private Button button;
+    TextView button2;
     //private Button googleBtn;
     GoogleSignInOptions gso;
     GoogleSignInClient gsc;
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         googleBtn =  findViewById(R.id.google_btn);
 
         button = (Button) findViewById(R.id.loginbtn);
+        button2 =  findViewById(R.id.register);
 
         TextView username = (TextView) findViewById(R.id.username);
         TextView password = (TextView) findViewById(R.id.password);
@@ -66,6 +68,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openActivity3();
+            }
+        });
+
 
     }
 
@@ -73,6 +82,12 @@ public class MainActivity extends AppCompatActivity {
         finish();
         Intent intent = new Intent(this, Activity2.class);
         startActivity(intent);
+    }
+
+    public void openActivity3(){
+        finish();
+        Intent intentReg = new Intent(this, Activity3.class);
+        startActivity(intentReg);
     }
 
     void signIn(){
