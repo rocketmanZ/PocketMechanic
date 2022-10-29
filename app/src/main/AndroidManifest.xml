@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.myloginapp">
+    package="com.example.PocketMechanic">
 
     <application
         android:allowBackup="true"
@@ -10,21 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyLoginApp">
         <activity
-            android:name=".Activity3"
+            android:name="com.example.PocketMechanic.Activity3"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Activity2"
+            android:name="com.example.PocketMechanic.Activity2"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.PocketMechanic.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

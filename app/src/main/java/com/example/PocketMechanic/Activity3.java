@@ -1,4 +1,4 @@
-package com.example.myloginapp;
+package com.example.PocketMechanic;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -24,7 +24,7 @@ public class Activity3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String username1 = username.getText().toString();
-                Toast.makeText(Activity3.this,"Username is"+username1,Toast.LENGTH_SHORT).show();
+                Toast.makeText(Activity3.this,"Your username is "+username1,Toast.LENGTH_SHORT).show();
             }
         });
     }

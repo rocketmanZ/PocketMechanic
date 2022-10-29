@@ -1,6 +1,5 @@
-package com.example.myloginapp;
+package com.example.PocketMechanic;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
