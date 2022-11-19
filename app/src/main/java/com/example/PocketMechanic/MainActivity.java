@@ -10,6 +10,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
+
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -56,11 +58,17 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (username.getText().toString().equals("admin") && password.getText().toString().equals("admin")) {
+                if (username.getText().toString().equals("user") && password.getText().toString().equals("user")) {
                     //correct
                     Toast.makeText(MainActivity.this, "LOGIN SUCCESSFUL,\n Welcome!", Toast.LENGTH_SHORT).show();
                     openActivity2();
-                } else
+                }
+                if (username.getText().toString().equals("tech") && password.getText().toString().equals("tech")) {
+                    //correct
+                    Toast.makeText(MainActivity.this, "LOGIN SUCCESSFUL,\n Welcome!", Toast.LENGTH_SHORT).show();
+                    openActivity4();
+                }
+                else
                     //incorrect
                     Toast.makeText(MainActivity.this, "LOGIN FAILED !!!", Toast.LENGTH_SHORT).show();
             }
@@ -85,6 +93,12 @@ public class MainActivity extends AppCompatActivity {
     public void openActivity3(){
         finish();
         Intent intentReg = new Intent(this, Activity3.class);
+        startActivity(intentReg);
+    }
+
+    public void openActivity4(){
+        finish();
+        Intent intentReg = new Intent(this, Activity4.class);
         startActivity(intentReg);
     }
 

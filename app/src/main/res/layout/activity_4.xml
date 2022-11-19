@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".Activity2">
+    tools:context=".Activity4">
 
     <TextView
         android:layout_width="match_parent"
@@ -21,33 +21,11 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/location"
-        android:text="User Screen"
+        android:id="@+id/email"
+        android:text="Techician Screen"
         android:textColor="@color/black"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/signin"
         android:textSize="24sp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/email"
-        android:text="email"
-        android:textColor="@color/black"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/location"
-        android:textSize="24sp"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sign Out"
-        android:id="@+id/signout"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_alignParentBottom="true"/>
-
-
-</RelativeLayout>
+    </RelativeLayout>

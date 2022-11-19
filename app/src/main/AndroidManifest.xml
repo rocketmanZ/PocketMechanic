@@ -10,21 +10,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PocketMechanic">
         <activity
-            android:name="com.example.PocketMechanic.Activity3"
+            android:name=".Activity4"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name="com.example.PocketMechanic.Activity2"
+            android:name=".Activity3"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name="com.example.PocketMechanic.MainActivity"
+            android:name=".Activity2"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
