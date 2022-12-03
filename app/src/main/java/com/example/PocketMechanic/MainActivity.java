@@ -63,10 +63,10 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "LOGIN SUCCESSFUL,\n Welcome!", Toast.LENGTH_SHORT).show();
                     openActivity2();
                 }
-                if (username.getText().toString().equals("tech") && password.getText().toString().equals("tech")) {
+                else if (username.getText().toString().equals("tech") && password.getText().toString().equals("tech")) {
                     //correct
                     Toast.makeText(MainActivity.this, "LOGIN SUCCESSFUL,\n Welcome!", Toast.LENGTH_SHORT).show();
-                    openActivity4();
+                    openTechScreen();
                 }
                 else
                     //incorrect
@@ -100,6 +100,12 @@ public class MainActivity extends AppCompatActivity {
         finish();
         Intent intentReg = new Intent(this, Activity4.class);
         startActivity(intentReg);
+    }
+
+    public void openTechScreen(){
+        finish();
+        Intent intentreg = new Intent(this, TechicianDrawer.class);
+        startActivity(intentreg);
     }
 
     void signIn(){
